@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0803282F587AA63ACE5E000C /* libPods-noteBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 370721E009375C1C90C74D06 /* libPods-noteBook.a */; };
+		AD145090214FC8380009896E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD14508F214FC8380009896E /* DetailViewController.m */; };
+		AD410C75214B8A9E007FA792 /* NoteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD410C74214B8A9E007FA792 /* NoteCollectionViewCell.m */; };
+		AD68DF07216C45D80004B243 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD68DF06216C45D80004B243 /* FMDBManager.m */; };
+		AD68DF0A216C46B80004B243 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD68DF09216C46B80004B243 /* CellModel.m */; };
+		ADF294B8214A48650076465A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF294B7214A48650076465A /* AppDelegate.m */; };
+		ADF294BB214A48650076465A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF294BA214A48650076465A /* ViewController.m */; };
+		ADF294BE214A48650076465A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF294BC214A48650076465A /* Main.storyboard */; };
+		ADF294C0214A48780076465A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADF294BF214A48780076465A /* Assets.xcassets */; };
+		ADF294C3214A48780076465A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF294C1214A48780076465A /* LaunchScreen.storyboard */; };
+		ADF294C6214A48780076465A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF294C5214A48780076465A /* main.m */; };
+		ADF294D0214A48790076465A /* noteBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF294CF214A48790076465A /* noteBookTests.m */; };
+		ADF294DB214A48790076465A /* noteBookUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF294DA214A48790076465A /* noteBookUITests.m */; };
+		ADF294EB214A50B20076465A /* AddNoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF294EA214A50B20076465A /* AddNoteViewController.m */; };
+		ADF294F0214A54E70076465A /* delete@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF294ED214A54E70076465A /* delete@2x.png */; };
+		ADF294F2214A54E70076465A /* note.png in Resources */ = {isa = PBXBuildFile; fileRef = ADF294EF214A54E70076465A /* note.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ADF294CC214A48790076465A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF294AB214A48640076465A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF294B2214A48650076465A;
+			remoteInfo = noteBook;
+		};
+		ADF294D7214A48790076465A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADF294AB214A48640076465A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADF294B2214A48650076465A;
+			remoteInfo = noteBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		370721E009375C1C90C74D06 /* libPods-noteBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-noteBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5ECCC2BD8683E900EEBACE1B /* Pods-noteBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteBook.debug.xcconfig"; path = "Target Support Files/Pods-noteBook/Pods-noteBook.debug.xcconfig"; sourceTree = "<group>"; };
+		6D829CE292052F2D11997C54 /* Pods-noteBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteBook.release.xcconfig"; path = "Target Support Files/Pods-noteBook/Pods-noteBook.release.xcconfig"; sourceTree = "<group>"; };
+		AD14508E214FC8380009896E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		AD14508F214FC8380009896E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		AD410C73214B8A9E007FA792 /* NoteCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteCollectionViewCell.h; sourceTree = "<group>"; };
+		AD410C74214B8A9E007FA792 /* NoteCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoteCollectionViewCell.m; sourceTree = "<group>"; };
+		AD68DF05216C45D80004B243 /* FMDBManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FMDBManager.h; sourceTree = "<group>"; };
+		AD68DF06216C45D80004B243 /* FMDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
+		AD68DF08216C46B80004B243 /* CellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
+		AD68DF09216C46B80004B243 /* CellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
+		ADF294B3214A48650076465A /* noteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF294B6214A48650076465A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		ADF294B7214A48650076465A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		ADF294B9214A48650076465A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		ADF294BA214A48650076465A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		ADF294BD214A48650076465A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ADF294BF214A48780076465A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		ADF294C2214A48780076465A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		ADF294C4214A48780076465A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF294C5214A48780076465A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADF294CB214A48790076465A /* noteBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = noteBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF294CF214A48790076465A /* noteBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = noteBookTests.m; sourceTree = "<group>"; };
+		ADF294D1214A48790076465A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF294D6214A48790076465A /* noteBookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = noteBookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADF294DA214A48790076465A /* noteBookUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = noteBookUITests.m; sourceTree = "<group>"; };
+		ADF294DC214A48790076465A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ADF294E9214A50B20076465A /* AddNoteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddNoteViewController.h; sourceTree = "<group>"; };
+		ADF294EA214A50B20076465A /* AddNoteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddNoteViewController.m; sourceTree = "<group>"; };
+		ADF294ED214A54E70076465A /* delete@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "delete@2x.png"; sourceTree = "<group>"; };
+		ADF294EF214A54E70076465A /* note.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = note.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ADF294B0214A48650076465A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0803282F587AA63ACE5E000C /* libPods-noteBook.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF294C8214A48790076465A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF294D3214A48790076465A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		72B98014C78FBB3FB53D5B42 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5ECCC2BD8683E900EEBACE1B /* Pods-noteBook.debug.xcconfig */,
+				6D829CE292052F2D11997C54 /* Pods-noteBook.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7E79EDCE7A8A804EDED69C4E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				370721E009375C1C90C74D06 /* libPods-noteBook.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ADF294AA214A48640076465A = {
+			isa = PBXGroup;
+			children = (
+				ADF294B5214A48650076465A /* noteBook */,
+				ADF294CE214A48790076465A /* noteBookTests */,
+				ADF294D9214A48790076465A /* noteBookUITests */,
+				ADF294B4214A48650076465A /* Products */,
+				72B98014C78FBB3FB53D5B42 /* Pods */,
+				7E79EDCE7A8A804EDED69C4E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		ADF294B4214A48650076465A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ADF294B3214A48650076465A /* noteBook.app */,
+				ADF294CB214A48790076465A /* noteBookTests.xctest */,
+				ADF294D6214A48790076465A /* noteBookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ADF294B5214A48650076465A /* noteBook */ = {
+			isa = PBXGroup;
+			children = (
+				ADF294B6214A48650076465A /* AppDelegate.h */,
+				ADF294B7214A48650076465A /* AppDelegate.m */,
+				ADF294B9214A48650076465A /* ViewController.h */,
+				ADF294BA214A48650076465A /* ViewController.m */,
+				ADF294E9214A50B20076465A /* AddNoteViewController.h */,
+				ADF294EA214A50B20076465A /* AddNoteViewController.m */,
+				AD410C73214B8A9E007FA792 /* NoteCollectionViewCell.h */,
+				AD410C74214B8A9E007FA792 /* NoteCollectionViewCell.m */,
+				AD14508E214FC8380009896E /* DetailViewController.h */,
+				AD14508F214FC8380009896E /* DetailViewController.m */,
+				ADF294BC214A48650076465A /* Main.storyboard */,
+				ADF294BF214A48780076465A /* Assets.xcassets */,
+				ADF294C1214A48780076465A /* LaunchScreen.storyboard */,
+				ADF294C4214A48780076465A /* Info.plist */,
+				ADF294C5214A48780076465A /* main.m */,
+				ADF294EC214A54E70076465A /* image */,
+				AD68DF05216C45D80004B243 /* FMDBManager.h */,
+				AD68DF06216C45D80004B243 /* FMDBManager.m */,
+				AD68DF08216C46B80004B243 /* CellModel.h */,
+				AD68DF09216C46B80004B243 /* CellModel.m */,
+			);
+			path = noteBook;
+			sourceTree = "<group>";
+		};
+		ADF294CE214A48790076465A /* noteBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF294CF214A48790076465A /* noteBookTests.m */,
+				ADF294D1214A48790076465A /* Info.plist */,
+			);
+			path = noteBookTests;
+			sourceTree = "<group>";
+		};
+		ADF294D9214A48790076465A /* noteBookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADF294DA214A48790076465A /* noteBookUITests.m */,
+				ADF294DC214A48790076465A /* Info.plist */,
+			);
+			path = noteBookUITests;
+			sourceTree = "<group>";
+		};
+		ADF294EC214A54E70076465A /* image */ = {
+			isa = PBXGroup;
+			children = (
+				ADF294ED214A54E70076465A /* delete@2x.png */,
+				ADF294EF214A54E70076465A /* note.png */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ADF294B2214A48650076465A /* noteBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF294DF214A48790076465A /* Build configuration list for PBXNativeTarget "noteBook" */;
+			buildPhases = (
+				D504359B118BAA293AD14B7E /* [CP] Check Pods Manifest.lock */,
+				ADF294AF214A48650076465A /* Sources */,
+				ADF294B0214A48650076465A /* Frameworks */,
+				ADF294B1214A48650076465A /* Resources */,
+				DBE030447202EAAA98925A63 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = noteBook;
+			productName = noteBook;
+			productReference = ADF294B3214A48650076465A /* noteBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ADF294CA214A48790076465A /* noteBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF294E2214A48790076465A /* Build configuration list for PBXNativeTarget "noteBookTests" */;
+			buildPhases = (
+				ADF294C7214A48790076465A /* Sources */,
+				ADF294C8214A48790076465A /* Frameworks */,
+				ADF294C9214A48790076465A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF294CD214A48790076465A /* PBXTargetDependency */,
+			);
+			name = noteBookTests;
+			productName = noteBookTests;
+			productReference = ADF294CB214A48790076465A /* noteBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ADF294D5214A48790076465A /* noteBookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADF294E5214A48790076465A /* Build configuration list for PBXNativeTarget "noteBookUITests" */;
+			buildPhases = (
+				ADF294D2214A48790076465A /* Sources */,
+				ADF294D3214A48790076465A /* Frameworks */,
+				ADF294D4214A48790076465A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADF294D8214A48790076465A /* PBXTargetDependency */,
+			);
+			name = noteBookUITests;
+			productName = noteBookUITests;
+			productReference = ADF294D6214A48790076465A /* noteBookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ADF294AB214A48640076465A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = K;
+				TargetAttributes = {
+					ADF294B2214A48650076465A = {
+						CreatedOnToolsVersion = 9.3;
+					};
+					ADF294CA214A48790076465A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = ADF294B2214A48650076465A;
+					};
+					ADF294D5214A48790076465A = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = ADF294B2214A48650076465A;
+					};
+				};
+			};
+			buildConfigurationList = ADF294AE214A48640076465A /* Build configuration list for PBXProject "noteBook" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ADF294AA214A48640076465A;
+			productRefGroup = ADF294B4214A48650076465A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ADF294B2214A48650076465A /* noteBook */,
+				ADF294CA214A48790076465A /* noteBookTests */,
+				ADF294D5214A48790076465A /* noteBookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ADF294B1214A48650076465A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF294C3214A48780076465A /* LaunchScreen.storyboard in Resources */,
+				ADF294F0214A54E70076465A /* delete@2x.png in Resources */,
+				ADF294C0214A48780076465A /* Assets.xcassets in Resources */,
+				ADF294BE214A48650076465A /* Main.storyboard in Resources */,
+				ADF294F2214A54E70076465A /* note.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF294C9214A48790076465A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF294D4214A48790076465A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D504359B118BAA293AD14B7E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-noteBook-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBE030447202EAAA98925A63 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-noteBook/Pods-noteBook-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-noteBook/Pods-noteBook-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ADF294AF214A48650076465A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF294EB214A50B20076465A /* AddNoteViewController.m in Sources */,
+				ADF294BB214A48650076465A /* ViewController.m in Sources */,
+				AD68DF07216C45D80004B243 /* FMDBManager.m in Sources */,
+				AD410C75214B8A9E007FA792 /* NoteCollectionViewCell.m in Sources */,
+				ADF294C6214A48780076465A /* main.m in Sources */,
+				ADF294B8214A48650076465A /* AppDelegate.m in Sources */,
+				AD145090214FC8380009896E /* DetailViewController.m in Sources */,
+				AD68DF0A216C46B80004B243 /* CellModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF294C7214A48790076465A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF294D0214A48790076465A /* noteBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADF294D2214A48790076465A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADF294DB214A48790076465A /* noteBookUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ADF294CD214A48790076465A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF294B2214A48650076465A /* noteBook */;
+			targetProxy = ADF294CC214A48790076465A /* PBXContainerItemProxy */;
+		};
+		ADF294D8214A48790076465A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADF294B2214A48650076465A /* noteBook */;
+			targetProxy = ADF294D7214A48790076465A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ADF294BC214A48650076465A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF294BD214A48650076465A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ADF294C1214A48780076465A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ADF294C2214A48780076465A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ADF294DD214A48790076465A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ADF294DE214A48790076465A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ADF294E0214A48790076465A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ECCC2BD8683E900EEBACE1B /* Pods-noteBook.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = noteBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = K.noteBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		ADF294E1214A48790076465A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D829CE292052F2D11997C54 /* Pods-noteBook.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = noteBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = K.noteBook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		ADF294E3214A48790076465A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = noteBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = K.noteBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/noteBook.app/noteBook";
+			};
+			name = Debug;
+		};
+		ADF294E4214A48790076465A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = noteBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = K.noteBookTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/noteBook.app/noteBook";
+			};
+			name = Release;
+		};
+		ADF294E6214A48790076465A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = noteBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = K.noteBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = noteBook;
+			};
+			name = Debug;
+		};
+		ADF294E7214A48790076465A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = noteBookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = K.noteBookUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = noteBook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ADF294AE214A48640076465A /* Build configuration list for PBXProject "noteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF294DD214A48790076465A /* Debug */,
+				ADF294DE214A48790076465A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF294DF214A48790076465A /* Build configuration list for PBXNativeTarget "noteBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF294E0214A48790076465A /* Debug */,
+				ADF294E1214A48790076465A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF294E2214A48790076465A /* Build configuration list for PBXNativeTarget "noteBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF294E3214A48790076465A /* Debug */,
+				ADF294E4214A48790076465A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADF294E5214A48790076465A /* Build configuration list for PBXNativeTarget "noteBookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADF294E6214A48790076465A /* Debug */,
+				ADF294E7214A48790076465A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ADF294AB214A48640076465A /* Project object */;
+}
