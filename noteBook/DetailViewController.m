@@ -8,7 +8,6 @@
 
 #import "DetailViewController.h"
 
-#define KCompressibilityFactor 280.00
 
 @interface DetailViewController ()
 

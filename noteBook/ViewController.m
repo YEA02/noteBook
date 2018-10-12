@@ -79,10 +79,9 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
+    [super viewWillAppear:animated];  
     NSArray *array = [manager selectNotes];
-    self.dataArray=(NSMutableArray *)array;
+    self.dataArray=(NSMutableArray *)array;  //获取数据库中保存的数据
 }
 
 -(void)addNote:(AddNoteViewController *)addVC{   //增加新的记事本 ,实现协议定义的方法
@@ -93,7 +92,7 @@
     tempNote.date = addVC.timeLabel.text;
     tempNote.content = addVC.tex.text;
     
-    [manager addNewNote:tempNote];
+    [manager addNewNote:tempNote];     //数据库中内容发生相应改变
     [self.dataArray addObject:tempNote];   //往数据源中添加model
     [self.collectionView reloadData];  //刷新界面
 }
@@ -104,7 +103,7 @@
     tempNote.date = time;
     tempNote.content = content;
     [self.dataArray replaceObjectAtIndex:deleteIndexPath withObject:tempNote];
-    [manager updateNote:tempNote];
+    [manager updateNote:tempNote];   //数据库中内容发生相应改变
 //    [self.dataArray addObject:note];  //错误写法，因为是更新cell值，所以是用replaceObjectAtIndex，修改当前项数据
     
     [self.collectionView reloadData];
@@ -144,7 +143,7 @@
 
 -(void)deleteNote:(NoteCollectionViewCell *)noteCollectionViewCell{  //实现代理的方法
     NSIndexPath *indexPath=[self.collectionView indexPathForCell:noteCollectionViewCell];   //获取当前cell所在位置
-    [manager deleteNote:self.dataArray[indexPath.row]];
+    [manager deleteNote:self.dataArray[indexPath.row]];   //数据库中内容发生相应改变
     [self.dataArray removeObjectAtIndex:indexPath.row];   //删除数据源中具体项
 
     NSArray *cellArray=[self.collectionView visibleCells];
@@ -171,7 +170,7 @@
     tmpNote = self.dataArray[indexPath.row];
     self.detailVC.detailText=tmpNote.content;
     self.detailVC.time=tmpNote.date;
-//    self.detailVC.texi.text=self.dataArray[indexPath.row];  //为什么显示不出来 ？？ → 界面间的跳转只能传递值，比如上面用的是detailText来存放传递的值，不能直接为下一界面的textfield赋值
+//    self.detailVC.texi.text=tmpNote.content;  //为什么显示不出来 ？？ → 界面间的跳转只能传递值，比如上面用的是detailText来存放传递的值，不能直接为下一界面的textfield赋值
     
     [self.navigationController pushViewController:self.detailVC animated:YES];
     

@@ -7,7 +7,6 @@
 //
 
 #import "AddNoteViewController.h"
-#define KCompressibilityFactor 280.00
 
 @interface AddNoteViewController ()
 @end
@@ -65,14 +64,8 @@
 
 -(void)save{
     [self.delegate addNote:self];   //代理方法中传的是self
-    
     [self.navigationController popViewControllerAnimated:YES];
 }
-
-
-
-
-
 
 -(void)back{
     [self.navigationController popViewControllerAnimated:YES];
