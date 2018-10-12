@@ -12,7 +12,7 @@
 -(void) addNote:(AddNoteViewController *) addVC;   //声明方法
 @end
 
-@interface AddNoteViewController : UIViewController <UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface AddNoteViewController : UIViewController
 @property UITextView *tex;
 @property (nonatomic,strong) UILabel *timeLabel;
 @property (nonatomic,weak) id<AddProtocol>delegate;  //声明协议变量

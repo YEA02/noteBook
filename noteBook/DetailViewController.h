@@ -12,7 +12,7 @@
 -(void) saveNote:(NSString *)time and:(NSString *)content;   //声明方法
 @end
 
-@interface DetailViewController : UIViewController<UIImagePickerControllerDelegate,UINavigationControllerDelegate>
+@interface DetailViewController : UIViewController
 
 @property (nonatomic,strong) NSMutableAttributedString *detailText;
 @property UITextView *texi;
