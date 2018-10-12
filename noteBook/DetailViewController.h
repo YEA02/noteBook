@@ -14,7 +14,7 @@
 
 @interface DetailViewController : UIViewController
 
-@property (nonatomic,strong) NSMutableAttributedString *detailText;
+@property (nonatomic,strong) NSString *detailText;
 @property UITextView *texi;
 @property UILabel *timeLabel;
 @property (nonatomic,strong)  NSString *time;

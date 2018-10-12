@@ -13,12 +13,12 @@
 @interface ViewController ()
 @property (nonatomic,strong) AddNoteViewController *addVC;
 @property (nonatomic,strong) NSMutableArray *dataArray;
-@property (nonatomic,strong) NSMutableArray *searchArray;
 @property (nonatomic,strong) UICollectionView *collectionView;
 @property (nonatomic,strong) UIButton *ediBtn;
 @property (nonatomic,retain) UISearchController *searchController;
 @property (nonatomic,strong) DetailViewController *detailVC;
-
+@property (nonatomic,strong) NSMutableArray *textArray;
+@property (nonatomic,strong) NSMutableArray *searchArray;
 @end
 
 @implementation ViewController
@@ -83,7 +83,6 @@
     
     NSArray *array = [manager selectNotes];
     self.dataArray=(NSMutableArray *)array;
-    
 }
 
 -(void)addNote:(AddNoteViewController *)addVC{   //增加新的记事本 ,实现协议定义的方法
@@ -96,7 +95,6 @@
     
     [manager addNewNote:tempNote];
     [self.dataArray addObject:tempNote];   //往数据源中添加model
-    
     [self.collectionView reloadData];  //刷新界面
 }
 
@@ -109,7 +107,6 @@
     [manager updateNote:tempNote];
 //    [self.dataArray addObject:note];  //错误写法，因为是更新cell值，所以是用replaceObjectAtIndex，修改当前项数据
     
-
     [self.collectionView reloadData];
 }
 
@@ -128,13 +125,13 @@
 -(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath{
 
     NoteCollectionViewCell *cell=[collectionView dequeueReusableCellWithReuseIdentifier:@"identifier" forIndexPath:indexPath];
-    CellModel *tmpNote = nil;
     if(self.searchController.active){
-        tmpNote = self.searchArray[indexPath.row];
+        cell.tex.text=self.searchArray[indexPath.row];
     }else{
-        tmpNote = self.dataArray[indexPath.row];
+        CellModel *tempNote=nil;
+        tempNote = self.dataArray[indexPath.row];
+        cell.tex.text=tempNote.content;
     }
-    cell.tex.text=tmpNote.content;
     if([self.ediBtn.titleLabel.text isEqualToString: @"编辑"]) {
         cell.deleteBtn.hidden = YES;  //重新加载页面就会进入这个方法，要么是在cellForItem里面判断要么是在cell文件定义的方法中判断
     }else {
@@ -149,6 +146,7 @@
     NSIndexPath *indexPath=[self.collectionView indexPathForCell:noteCollectionViewCell];   //获取当前cell所在位置
     [manager deleteNote:self.dataArray[indexPath.row]];
     [self.dataArray removeObjectAtIndex:indexPath.row];   //删除数据源中具体项
+
     NSArray *cellArray=[self.collectionView visibleCells];
     for(NoteCollectionViewCell *cell in cellArray){
         [cell shake];  //加上这语句删除了一个cell之后可以继续抖动了
@@ -171,8 +169,7 @@
     self.detailVC.delegate=self;  //记得写delegate
     CellModel *tmpNote = nil;
     tmpNote = self.dataArray[indexPath.row];
-    NSMutableAttributedString *attriString=[[NSMutableAttributedString alloc] initWithString:tmpNote.content];
-    self.detailVC.detailText=attriString;
+    self.detailVC.detailText=tmpNote.content;
     self.detailVC.time=tmpNote.date;
 //    self.detailVC.texi.text=self.dataArray[indexPath.row];  //为什么显示不出来 ？？ → 界面间的跳转只能传递值，比如上面用的是detailText来存放传递的值，不能直接为下一界面的textfield赋值
     
@@ -209,14 +206,32 @@
     [self.navigationController pushViewController:self.addVC animated:YES];
 }
 
+-(NSMutableArray *)textArray {   //重写textarray的get方法
+   self.textArray=[[NSMutableArray alloc]init];
+    NSUInteger count= self.dataArray.count;
+    for(int i=0; i<count; i++){
+        CellModel *tempNote=self.dataArray[i];
+        [_textArray addObject:tempNote.content];
+    }
+    return _textArray;
+}
+
 -(void)updateSearchResultsForSearchController:(UISearchController *)searchController{   //搜索过滤
     NSString *searchString=self.searchController.searchBar.text;
     if(self.searchArray.count >0){
         [self.searchArray removeAllObjects];
     }
-    
     NSPredicate *predicate=[NSPredicate predicateWithFormat:@"SELF CONTAINS[c] %@",searchString];
-    self.searchArray=[NSMutableArray arrayWithArray:[self.dataArray filteredArrayUsingPredicate:predicate]];  //过滤数据
+    
+//    self.textArray=[[NSMutableArray alloc]init];  //每次搜索的时候新建
+//    NSUInteger count= self.dataArray.count;
+//    for(int i=0; i<count; i++){
+//        CellModel *tempNote=nil;
+//        tempNote = self.dataArray[i];
+//        [self.textArray addObject:tempNote.content];
+//    }
+    self.searchArray=[NSMutableArray arrayWithArray:[self.textArray filteredArrayUsingPredicate:predicate]];  //过滤数据
+    
     [self.collectionView reloadData];   //刷新表格
 }
 

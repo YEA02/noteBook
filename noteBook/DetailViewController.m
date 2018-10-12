@@ -33,7 +33,7 @@
     self.texi=[[UITextView alloc]initWithFrame:CGRectMake(40,110, self.view.bounds.size.width-80, self.view.bounds.size.height-80)];
     self.texi.backgroundColor=[UIColor clearColor];
     [self.texi setFont:[UIFont systemFontOfSize:20]];
-    self.texi.attributedText=self.detailText;  //通过上一界面传递过来的detailtext中的文本赋值
+    self.texi.text=self.detailText;  //通过上一界面传递过来的detailtext中的文本赋值
     [imgV addSubview:self.texi];
     
     self.timeLabel=[[UILabel alloc]initWithFrame:CGRectMake((self.view.bounds.size.width-200)/2, self.view.bounds.size.height-64-30, 200, 30)];

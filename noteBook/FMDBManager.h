@@ -17,5 +17,6 @@
 - (void)updateNote:(CellModel *)note;
 - (void)deleteNote:(CellModel *)note;
 - (NSArray *)selectNotes;
+- (NSArray *)selectNotess;
 
 @end

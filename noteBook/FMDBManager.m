@@ -125,4 +125,30 @@ static dispatch_once_t predicate;
     [fMDatabase close];
     return array;
 }
+
+- (NSArray *)selectNotess{
+    BOOL isOpen = [fMDatabase open];
+    if (isOpen) {
+        NSLog(@"数据库打开成功!");
+    } else {
+        NSLog(@"数据库打开失败!");
+    }
+    
+    NSString *sql = @"select * from CellModel";
+    FMResultSet *set = [fMDatabase executeQuery:sql];
+    NSMutableArray *array = [[NSMutableArray alloc] init];
+    
+    while ([set next]) {
+        CellModel *tmpNote = [[CellModel alloc] init];
+        tmpNote.date = [set stringForColumn:@"date"];
+        tmpNote.content = [set  stringForColumn:@"content"];
+        tmpNote.ID = [set intForColumn:@"ID"];
+        
+        [array addObject: tmpNote.content];
+    }
+    
+    [fMDatabase close];
+    return array;
+}
+
 @end
