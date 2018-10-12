@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0803282F587AA63ACE5E000C /* libPods-noteBook.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 370721E009375C1C90C74D06 /* libPods-noteBook.a */; };
 		AD145090214FC8380009896E /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD14508F214FC8380009896E /* DetailViewController.m */; };
 		AD410C75214B8A9E007FA792 /* NoteCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD410C74214B8A9E007FA792 /* NoteCollectionViewCell.m */; };
 		AD68DF07216C45D80004B243 /* FMDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AD68DF06216C45D80004B243 /* FMDBManager.m */; };
 		AD68DF0A216C46B80004B243 /* CellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD68DF09216C46B80004B243 /* CellModel.m */; };
+		ADE2E7E22170932A00B45039 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE2E7D82170932900B45039 /* FMDatabase.m */; };
+		ADE2E7E32170932A00B45039 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE2E7DA2170932A00B45039 /* FMDatabaseAdditions.m */; };
+		ADE2E7E42170932A00B45039 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE2E7DC2170932A00B45039 /* FMDatabasePool.m */; };
+		ADE2E7E52170932A00B45039 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE2E7DE2170932A00B45039 /* FMDatabaseQueue.m */; };
+		ADE2E7E62170932A00B45039 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = ADE2E7E12170932A00B45039 /* FMResultSet.m */; };
 		ADF294B8214A48650076465A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF294B7214A48650076465A /* AppDelegate.m */; };
 		ADF294BB214A48650076465A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF294BA214A48650076465A /* ViewController.m */; };
 		ADF294BE214A48650076465A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADF294BC214A48650076465A /* Main.storyboard */; };
@@ -43,9 +47,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		370721E009375C1C90C74D06 /* libPods-noteBook.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-noteBook.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5ECCC2BD8683E900EEBACE1B /* Pods-noteBook.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteBook.debug.xcconfig"; path = "Target Support Files/Pods-noteBook/Pods-noteBook.debug.xcconfig"; sourceTree = "<group>"; };
-		6D829CE292052F2D11997C54 /* Pods-noteBook.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-noteBook.release.xcconfig"; path = "Target Support Files/Pods-noteBook/Pods-noteBook.release.xcconfig"; sourceTree = "<group>"; };
 		AD14508E214FC8380009896E /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		AD14508F214FC8380009896E /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		AD410C73214B8A9E007FA792 /* NoteCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoteCollectionViewCell.h; sourceTree = "<group>"; };
@@ -54,6 +55,17 @@
 		AD68DF06216C45D80004B243 /* FMDBManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FMDBManager.m; sourceTree = "<group>"; };
 		AD68DF08216C46B80004B243 /* CellModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CellModel.h; sourceTree = "<group>"; };
 		AD68DF09216C46B80004B243 /* CellModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CellModel.m; sourceTree = "<group>"; };
+		ADE2E7D72170932900B45039 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		ADE2E7D82170932900B45039 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		ADE2E7D92170932A00B45039 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		ADE2E7DA2170932A00B45039 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		ADE2E7DB2170932A00B45039 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		ADE2E7DC2170932A00B45039 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		ADE2E7DD2170932A00B45039 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		ADE2E7DE2170932A00B45039 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		ADE2E7DF2170932A00B45039 /* FMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDB.h; sourceTree = "<group>"; };
+		ADE2E7E02170932A00B45039 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		ADE2E7E12170932A00B45039 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
 		ADF294B3214A48650076465A /* noteBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = noteBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF294B6214A48650076465A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ADF294B7214A48650076465A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,7 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0803282F587AA63ACE5E000C /* libPods-noteBook.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -102,21 +113,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		72B98014C78FBB3FB53D5B42 /* Pods */ = {
+		ADE2E7D62170932900B45039 /* fmdb */ = {
 			isa = PBXGroup;
 			children = (
-				5ECCC2BD8683E900EEBACE1B /* Pods-noteBook.debug.xcconfig */,
-				6D829CE292052F2D11997C54 /* Pods-noteBook.release.xcconfig */,
+				ADE2E7D72170932900B45039 /* FMDatabase.h */,
+				ADE2E7D82170932900B45039 /* FMDatabase.m */,
+				ADE2E7D92170932A00B45039 /* FMDatabaseAdditions.h */,
+				ADE2E7DA2170932A00B45039 /* FMDatabaseAdditions.m */,
+				ADE2E7DB2170932A00B45039 /* FMDatabasePool.h */,
+				ADE2E7DC2170932A00B45039 /* FMDatabasePool.m */,
+				ADE2E7DD2170932A00B45039 /* FMDatabaseQueue.h */,
+				ADE2E7DE2170932A00B45039 /* FMDatabaseQueue.m */,
+				ADE2E7DF2170932A00B45039 /* FMDB.h */,
+				ADE2E7E02170932A00B45039 /* FMResultSet.h */,
+				ADE2E7E12170932A00B45039 /* FMResultSet.m */,
 			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
-		7E79EDCE7A8A804EDED69C4E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				370721E009375C1C90C74D06 /* libPods-noteBook.a */,
-			);
-			name = Frameworks;
+			path = fmdb;
 			sourceTree = "<group>";
 		};
 		ADF294AA214A48640076465A = {
@@ -126,8 +138,6 @@
 				ADF294CE214A48790076465A /* noteBookTests */,
 				ADF294D9214A48790076465A /* noteBookUITests */,
 				ADF294B4214A48650076465A /* Products */,
-				72B98014C78FBB3FB53D5B42 /* Pods */,
-				7E79EDCE7A8A804EDED69C4E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,6 +169,7 @@
 				ADF294C1214A48780076465A /* LaunchScreen.storyboard */,
 				ADF294C4214A48780076465A /* Info.plist */,
 				ADF294C5214A48780076465A /* main.m */,
+				ADE2E7D62170932900B45039 /* fmdb */,
 				ADF294EC214A54E70076465A /* image */,
 				AD68DF05216C45D80004B243 /* FMDBManager.h */,
 				AD68DF06216C45D80004B243 /* FMDBManager.m */,
@@ -202,11 +213,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = ADF294DF214A48790076465A /* Build configuration list for PBXNativeTarget "noteBook" */;
 			buildPhases = (
-				D504359B118BAA293AD14B7E /* [CP] Check Pods Manifest.lock */,
 				ADF294AF214A48650076465A /* Sources */,
 				ADF294B0214A48650076465A /* Frameworks */,
 				ADF294B1214A48650076465A /* Resources */,
-				DBE030447202EAAA98925A63 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -324,45 +333,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		D504359B118BAA293AD14B7E /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-noteBook-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DBE030447202EAAA98925A63 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-noteBook/Pods-noteBook-resources.sh",
-				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/SVProgressHUD.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-noteBook/Pods-noteBook-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		ADF294AF214A48650076465A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -371,11 +341,16 @@
 				ADF294EB214A50B20076465A /* AddNoteViewController.m in Sources */,
 				ADF294BB214A48650076465A /* ViewController.m in Sources */,
 				AD68DF07216C45D80004B243 /* FMDBManager.m in Sources */,
+				ADE2E7E22170932A00B45039 /* FMDatabase.m in Sources */,
 				AD410C75214B8A9E007FA792 /* NoteCollectionViewCell.m in Sources */,
+				ADE2E7E52170932A00B45039 /* FMDatabaseQueue.m in Sources */,
+				ADE2E7E62170932A00B45039 /* FMResultSet.m in Sources */,
+				ADE2E7E42170932A00B45039 /* FMDatabasePool.m in Sources */,
 				ADF294C6214A48780076465A /* main.m in Sources */,
 				ADF294B8214A48650076465A /* AppDelegate.m in Sources */,
 				AD145090214FC8380009896E /* DetailViewController.m in Sources */,
 				AD68DF0A216C46B80004B243 /* CellModel.m in Sources */,
+				ADE2E7E32170932A00B45039 /* FMDatabaseAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -542,7 +517,6 @@
 		};
 		ADF294E0214A48790076465A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5ECCC2BD8683E900EEBACE1B /* Pods-noteBook.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -559,7 +533,6 @@
 		};
 		ADF294E1214A48790076465A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D829CE292052F2D11997C54 /* Pods-noteBook.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

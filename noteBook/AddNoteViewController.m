@@ -7,7 +7,6 @@
 //
 
 #import "AddNoteViewController.h"
-#import "SVProgressHUD.h"
 #define KCompressibilityFactor 280.00
 
 @interface AddNoteViewController ()

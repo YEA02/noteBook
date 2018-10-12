@@ -7,7 +7,7 @@
 //
 
 #import "FMDBManager.h"
-#import <FMDB/FMDatabase.h>
+#import "FMDatabase.h"
 
 @interface FMDBManager () {
     FMDatabase *fMDatabase;
